@@ -1,0 +1,115 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #fff;
+}
+
+.btn {
+  border-radius: 0.5rem;
+  padding: 1.2rem 2.4rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+}
+
+.btn:hover {
+  color: #bb7900;
+}
+
+.arrow {
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  background-color: transparent;
+}
+
+/* Navbar */
+.header {
+  background-color: #bb7900;
+  height: 6.4rem;
+  padding: 1.2rem 2.4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 4.8rem;
+}
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  gap: 6.4rem;
+  align-items: center;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.main-nav-link:active,
+.main-nav-link:hover {
+  color: #f0d797;
+}
+
+.user-box {
+  justify-self: end;
+}
+
+.user:link,
+.user:visited {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.user:hover,
+.user:active {
+  color: #f0d797 !important;
+}
+
+.dropdown-menu {
+  min-width: 100% !important;
+}
+
+.dropdown-item {
+  font-size: 1.6rem;
+}
+
+/* Utilities */
+.heading-main {
+  font-weight: 500;
+  font-size: 3.6rem;
+  color: #333;
+}
+
+.hidden {
+  display: none;
+}

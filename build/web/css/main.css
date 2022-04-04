@@ -1,0 +1,567 @@
+/* Login */
+
+.section-login {
+  padding: 2.4rem 0;
+  height: 100vh;
+  background-image: url(img/backGroundImage.png);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slogan__text {
+  font-size: 6.4rem;
+  font-weight: 700;
+}
+
+.subslogan__text {
+  font-size: 3.6rem;
+  font-weight: 700;
+  color: #41361a;
+  margin-top: 3.2rem;
+}
+
+.container__login {
+  background-color: #f0b10f;
+  margin-top: 4.8rem;
+  width: 30%;
+  padding: 2.4rem 1.6rem;
+  border-radius: 0.5rem;
+  box-shadow: 0.3rem 0.6rem 0.3rem rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.login__icon {
+  stroke: #fff;
+  width: 3.2rem;
+  height: 3.2rem;
+  padding: 1.2rem;
+  border: 0.3rem solid #fff;
+  border-radius: 50%;
+}
+
+.login__text {
+  margin-top: 0.8rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  width: 100%;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.form-input input {
+  padding: 0.8rem;
+  border-radius: 1rem;
+  border: none;
+  font-size: inherit;
+}
+
+.btn-login {
+  background-color: #c6920c;
+  align-self: flex-end;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.btn-login:hover {
+  transform: translateY(-0.2rem);
+  background-color: #f1bf40;
+  box-shadow: 0 0.3rem 0.15rem rgba(0, 0, 0, 0.04);
+  color: #41361a;
+}
+
+/* ClientHome */
+.section-hero {
+  height: calc(100vh - 6.4rem);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url(img/homeImage.png);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading-pinyon {
+  font-size: 9.6rem;
+  font-family: "Pinyon Script", sans-serif;
+  color: #f0b10f;
+}
+
+.subheading {
+  margin-top: -7.8rem;
+  font-size: 7.2rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.heading-slogan {
+  font-size: 2.4rem;
+  color: #fff;
+  font-weight: 700;
+}
+
+/* About */
+.section-about {
+  padding: 9.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 1 50%;
+}
+
+.about-pinyon {
+  font-family: "Pinyon Script", sans-serif;
+  font-size: 4.8rem;
+  color: #f0b10f;
+}
+
+.about-subtitle {
+  font-size: 3.6rem;
+  font-weight: 700;
+  margin-top: -4rem;
+}
+
+.stars {
+  margin: 3rem 0;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.about-description {
+  width: 60%;
+  font-size: 1.8rem;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.signature {
+  margin-top: 2.4rem;
+  font-size: 2.4rem;
+  color: rgba(0, 0, 0, 0.5);
+  font-family: "Pinyon Script", sans-serif;
+  text-align: right;
+}
+
+/* Specialities
+.section-specialities {
+  padding: 4.8rem 6.4rem 1.6rem 6.4rem;
+  background-image: url(img/backgroundImageSpecial.png);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.special-pinyon {
+  font-family: "Pinyon Script", sans-serif;
+  font-size: 4.8rem;
+  color: #f0b10f;
+}
+
+.special-subtitle {
+  font-size: 3.6rem;
+  font-weight: 700;
+  margin-top: -4rem;
+  color: #fff;
+}
+
+.special-description {
+  margin-top: 1.6rem;
+  margin-bottom: 4.8rem;
+  font-size: 3rem;
+  font-weight: 500;
+  color: #fff;
+}
+.carousel {
+  display: flex;
+  align-items: center;
+  gap: 6.4rem;
+}
+
+.right-arrow,
+.left-arrow {
+  width: 2.8rem;
+  height: 2.8rem;
+  color: #fff;
+  transition: all 0.2s;
+}
+
+.right-arrow:hover,
+.left-arrow:hover {
+  color: #f1bf40;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4.8rem;
+}
+
+.card-dish {
+  border-radius: 1rem;
+  overflow: hidden;
+  padding: 1.2rem;
+}
+
+.card-dish-img {
+  width: 100%;
+} */
+
+/* RESERVATION */
+.reser {
+  background-image: url(img/backGroundImage.png);
+  background-size: cover;
+}
+
+.reservation-heading {
+  margin-top: 6.4rem;
+  font-size: 3.6rem;
+  text-align: center;
+}
+
+.reservation-container {
+  width: 60rem;
+  margin: 6rem auto;
+  padding: 3.2rem 4.8rem;
+  background-color: #fff;
+  border-radius: 0.8rem;
+  box-shadow: 0.2rem 0.3rem 0.15rem rgba(0, 0, 0, 0.15);
+}
+
+.booking-info {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.reservation-form {
+  margin-top: 2.4rem;
+  font-size: 2.4rem;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.group-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.group-form input,
+.group-form select {
+  padding: 0.5rem 0.8rem;
+  color: currentColor;
+  border: 0.2rem solid #bbb;
+  border-radius: 1rem;
+}
+
+.btn-submit {
+  margin-top: 0.4rem;
+  background-color: #bb7900;
+  font-size: 1.8rem;
+  color: #fff;
+  align-self: flex-end;
+}
+
+.btn-submit:hover {
+  background-color: #c6920c;
+  color: #333;
+  transform: translateY(-0.2rem);
+  box-shadow: 0 0.3rem 0.15rem rgba(0, 0, 0, 0.1);
+}
+
+/* Successfully reserved */
+.notification {
+  background-image: url(img/backGroundImage.png);
+  background-size: cover;
+}
+
+.notification-container {
+  width: 60rem;
+  margin: 18rem auto;
+  padding: 2.4rem 3.6rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 0.3rem 0.15rem rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.notification-success {
+  width: 7.8rem;
+  height: 7.8rem;
+  color: #05c55c;
+}
+
+.notification-unsuccess {
+  width: 7.8rem;
+  height: 7.8rem;
+  color: #a10505;
+}
+
+.notification-heading {
+  color: #333;
+  font-size: 2.8rem;
+  margin-top: 2.4rem;
+  margin-bottom: 1.8rem;
+}
+
+.btn-back {
+  font-size: 1.8rem;
+  color: #f1bf40;
+}
+
+.btn-try {
+  font-size: 1.8rem;
+  color: #0097e6;
+}
+
+.btn-try:hover {
+  color: #40739e !important;
+}
+
+/* Select reservation */
+.booked-page {
+  background-image: linear-gradient(
+    to right,
+    rgb(112, 111, 42),
+    rgb(179, 142, 42)
+  );
+}
+
+.select-reservation-heading {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 2.8rem;
+}
+
+.booked-container {
+  width: 120rem;
+  margin: 7.2rem auto;
+  background-color: #fff;
+  padding: 2.4rem;
+  border-radius: 0.5rem;
+}
+
+.table {
+  font-size: 2.4rem;
+}
+
+.btn-order {
+  background-color: #f0b10f;
+}
+
+.btn-order:hover {
+  background-color: #41361a;
+}
+
+/* Select food */
+.menu-page {
+  background-image: linear-gradient(
+    to right,
+    rgba(112, 111, 42),
+    rgb(179, 142, 42)
+  );
+}
+
+.container-menu {
+  width: 120rem;
+  margin: 5.6rem auto;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  column-gap: 3.2rem;
+  align-items: start;
+}
+
+.search-order-box {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.search-box {
+  background-color: #fff;
+  padding: 1.6rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.3rem 0.15rem rgba(0, 0, 0, 0.1);
+}
+
+.search-text {
+  font-size: 3.6rem;
+  margin-bottom: 1.2rem;
+  color: #41361a;
+}
+
+.form-search {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.search_field input {
+  margin: 0;
+  padding: 0.8rem;
+  border: #bbb solid 0.2rem;
+  border-radius: 1rem;
+  font-size: 1.8rem;
+  color: inherit;
+}
+
+.select-type {
+  padding: 0.8rem;
+  border: #bbb solid 0.2rem;
+  border-radius: 1rem;
+  font-size: 1.8rem;
+}
+
+.search-icon {
+  background-color: #eee;
+  padding: 0.8rem;
+}
+
+.search-icon:hover {
+  background-color: #bbb;
+}
+
+.order-list {
+  background-color: #fff;
+  padding: 1.6rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0.3rem 0.15rem rgba(0, 0, 0, 0.1);
+}
+
+.order-text {
+  font-size: 3.6rem;
+  margin-bottom: 1.2rem;
+  color: #41361a;
+}
+
+.ordered-dishes {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.ordered-dish {
+  display: grid;
+  grid-template-columns: 10rem 5rem 1fr;
+  font-size: 1.8rem;
+}
+
+.submit-form {
+  align-self: flex-end;
+  margin-right: 1rem;
+}
+
+.button {
+  padding: 0.8rem 1.6rem;
+  border: none;
+  border-radius: 10rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: all 0.3s;
+  align-self: center;
+}
+
+.button:hover {
+  color: #eee;
+}
+
+.order-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 3.2rem;
+  column-gap: 2.4rem;
+}
+
+.card-dish {
+  background-color: #fff;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0.15 0.3rem 0.15rem rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-dish:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 0.6rem 0.3rem rgba(0, 0, 0, 0.05);
+}
+
+.card-dish-img {
+  width: 100%;
+  object-fit: cover;
+  height: 17.5rem;
+}
+
+.card-dish-body {
+  padding: 1.6rem 1.2rem;
+}
+
+.card-dish-name {
+  color: #bb7900;
+  font-size: 2.4rem;
+}
+
+.card-dish-text {
+  color: #333;
+  font-size: 1.6rem;
+}
+
+.card-dish-price {
+  color: #333;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.card-dish-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.dish-quantity {
+  padding: 0.5rem 1rem;
+  border-radius: 100rem;
+  border: 0.2rem solid #f0b10f;
+  font-size: 1.4rem;
+  color: currentColor;
+}
