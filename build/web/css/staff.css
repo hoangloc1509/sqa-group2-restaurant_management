@@ -1,0 +1,257 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 4, 2022, 10:37:55 PM
+    Author     : profe
+*/
+
+.staff-container {
+  font-family: sans-serif;
+  height: 100vh;
+  background-color: #e5e5e5;
+  display: grid;
+  grid-template-columns: 22.6rem 1fr;
+  grid-template-rows: 7rem 1fr;
+}
+
+.side-bar-position {
+  font-size: 3rem;
+  font-weight: 500;
+  background-color: rgba(0, 138, 39, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner {
+  display: flex;
+  background-color: rgba(0, 138, 39);
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2.4rem;
+}
+
+.burger-btn {
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+}
+
+.menu-icon {
+  width: 4.8rem;
+  height: 4.8rem;
+}
+
+.welcome-text {
+  font-size: 1.8rem;
+  font-style: italic;
+}
+
+.side-bar-main {
+  background-color: #555;
+}
+
+.side-bar-list {
+  padding: 1.2rem 0;
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+}
+
+.side-bar-link:visited,
+.side-bar-link:link {
+  display: block;
+  padding: 1.2rem;
+  color: #8b8b8b;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s;
+}
+
+.side-bar-link:hover,
+.side-bar-link:active {
+  color: #fff;
+  background-color: #686868;
+}
+
+/* Main section */
+
+.main {
+  padding: 2.4rem;
+}
+
+/* Search client */
+.search-field {
+  margin-top: 3.2rem;
+  font-size: 2rem;
+  color: #333;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+}
+
+#clientname {
+  margin-left: 1.6rem;
+  width: 40rem;
+  padding: 0.5rem 1rem;
+  border: #555 solid 0.1rem;
+  border-radius: 1rem;
+}
+
+.search-field button,
+.btn-payment {
+  padding: 0.5rem 2rem;
+  border-radius: 100rem;
+  background-color: #00a8ff;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.4);
+  transition: all 0.2s;
+}
+
+.search-field button:hover,
+.btn-payment:hover {
+  color: #fff;
+  background-color: #0097e6;
+  transform: translateY(-0.2rem);
+  box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.4);
+}
+
+.search-field button:active {
+  transform: translateY(0);
+}
+
+#content {
+  margin-top: 3.2rem;
+}
+
+.table {
+  font-size: 1.8rem;
+  color: #333;
+  width: 100%;
+  text-align: center;
+}
+
+/* Receipt */
+.receipt-information-box {
+  margin-top: 3.2rem;
+  font-size: 1.8rem;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.receipt-title {
+  font-weight: 700;
+}
+
+.receipt-customer-info-box {
+  margin-top: 1.2rem;
+  font-size: 1.8rem;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.customer-title {
+  font-weight: 700;
+}
+
+.list-title {
+  font-weight: 700;
+  margin-top: 1.2rem;
+  font-size: 1.8rem;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.table-receipt {
+  margin-top: 2.4rem;
+  font-size: 1.8rem;
+  width: 100%;
+  text-align: center;
+}
+
+.table-receipt-body {
+  font-weight: 400;
+  background-color: #fff;
+}
+
+th,
+td {
+  padding: 1.2rem;
+}
+
+.container-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.4rem 4.8rem;
+}
+
+.btn-back {
+  padding: 0.5rem 2.4rem;
+  border-radius: 100rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #333;
+  background-color: #aaa;
+}
+
+.btn-back:hover {
+  color: #fff;
+  background-color: #bbb;
+}
+
+.btn-confirm {
+  padding: 0.5rem 2.4rem;
+  border-radius: 100rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #333;
+  background-color: #0097e6;
+}
+
+.btn-confirm:hover {
+  color: #fff;
+  background-color: #00a8ff;
+}
+
+/* Successful */
+.notification {
+  background-image: linear-gradient(to top left, #28b487, #7dd56f);
+  height: 100vh;
+}
+
+.notification-container {
+  width: 60rem;
+  margin: 18rem auto;
+  padding: 2.4rem 3.6rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 0.3rem 0.15rem rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.notification-success {
+  width: 7.8rem;
+  height: 7.8rem;
+  color: #05c55c;
+}
+
+.notification-heading {
+  color: #333;
+  font-size: 2.8rem;
+  margin-top: 2.4rem;
+  margin-bottom: 3.2rem;
+}

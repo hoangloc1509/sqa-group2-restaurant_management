@@ -42,32 +42,33 @@ public class SearchReser extends HttpServlet {
             ArrayList<Reser> rs = rsdao.getOrderedReser(clientname);
             PrintWriter out = response.getWriter();
             out.println("<table class =\"table\">\n" +
-"                <tr bgcolor=\"2684d1\">\n" +
-"                    <th><b>Người đặt</b></th>\n" +
-"                    <th><b>Số điện thoại</b></th>\n" +
-"                    <th><b>Số người</b></th>\n" +
-"                    <th><b>Ngày</b></th>\n" +
-"                    <th><b>Giờ</b></th>\n" +
-"                    <th></th>"
+"                <tr bgcolor=\"c5d9f1\">\n" +
+"                    <th style =\"padding: 1rem;\"><strong>Customer</strong></th>\n" +
+"                    <th><strong>Phone number</strong></th>\n" +
+"                    <th><strong>Guest number</strong></th>\n" +
+"                    <th><strong>Date</strong></th>\n" +
+"                    <th><strong>Time</strong></th>\n" +
+"                    <th>Action</th>"
                     + "</tr>");
             int cnt=0;
             for (Reser i:rs){
                 cnt++;
-                out.println("<tr>\n" +
-"                            <td>"+i.getName()+"</td>\n" +
-"                            <td>"+i.getPhone()+"</td>\n" +
-"                            <td>"+i.getQuantity()+"</td>\n" +
-"                            <td>"+i.getDate()+"</td>\n" +
-"                            <td>"+i.getTime()+"</td>\n" +
-"                            <td>\n" +
-"<form action=\""+servlet+"\">\n" +
-"                                    <button name=\"reser_id\" value = \""+i.getId()+"\" type = \"submit\" class=\"btn btn-success btn block mx-auto\" >Thanh toán</button>\n" +
-"                                </form>"+                               
-"                            </td>\n" +
-"                    </tr>");
+                out.println("<tr bgcolor=\"ffffff\">\n" +
+                                "<td style =\"padding: 1.2rem;\">"+i.getName()+"</td>\n" +
+                                "<td>"+i.getPhone()+"</td>\n" +
+                                "<td>"+i.getQuantity()+"</td>\n" +
+                                "<td>"+i.getDate()+"</td>\n" +
+                                "<td>"+i.getTime()+"</td>\n" +
+                                "<td>\n" +
+                                    "<form action=\""+servlet+"\">\n" +
+                                        "<button name=\"reser_id\" value = \""+i.getId()+"\" type = \"submit\" class=\"btn-payment\" >Confirm payment</button>\n" +
+                                    "</form>"+                               
+                                "</td>\n" +
+                            "</tr>");
             }
             out.println("</table>");
-        } catch (IOException e) {
+        }
+        catch (IOException e) {
         }
     }
 
