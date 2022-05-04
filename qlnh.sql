@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 30, 2022 at 08:18 AM
+-- Generation Time: May 03, 2022 at 11:19 AM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.1.2
 
@@ -124,7 +124,9 @@ INSERT INTO `tblreser` (`id`, `name`, `phone`, `quantity`, `booked_date`, `booke
 (5, 'Hoàng Duy Đạt', '0987125465', 6, '2022-03-25', '20:00:00', 4, 1, 0, 241000),
 (6, 'Ngô Đăng Thái', '01688175231', 12, '2022-03-23', '21:00:00', 5, 1, 0, 352000),
 (7, 'Ngô Phan Đình Nhã', '0178944256', 6, '2022-03-24', '12:00:00', 2, 1, 0, 335000),
-(8, 'Hoàng Đình Lộc', '0987125465', 6, '2022-03-30', '16:00:00', 1, 0, 0, 0);
+(8, 'Hoàng Đình Lộc', '0987125465', 6, '2022-03-30', '16:00:00', 1, 0, 0, 0),
+(9, 'Nguyễn Tử Quảng', '0124597895', 12, '2022-05-01', '08:00:00', 1, 0, 0, 0),
+(13, 'Ngô Phan Đình Nhã', '0745215784', 12, '2022-05-02', '09:00:00', 2, 0, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -197,13 +199,13 @@ ALTER TABLE `tbldish`
 -- AUTO_INCREMENT for table `tbldishordered`
 --
 ALTER TABLE `tbldishordered`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
 
 --
 -- AUTO_INCREMENT for table `tblreser`
 --
 ALTER TABLE `tblreser`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=65;
 
 --
 -- AUTO_INCREMENT for table `tbluser`

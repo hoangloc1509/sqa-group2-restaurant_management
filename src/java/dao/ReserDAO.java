@@ -59,7 +59,11 @@ public class ReserDAO extends DAO{
                 int quantity = rs.getInt("quantity");
                 String date = rs.getString("booked_date");
                 String time = rs.getString("booked_time");
-                res.add(new Reser(reser_id,name,phone,quantity,date,time));
+                int user_id = rs.getInt("userid");
+                int is_ordered = rs.getInt("is_ordered");
+                int is_paid = rs.getInt("is_paid");
+                float amount = rs.getFloat("amount");
+                res.add(new Reser(reser_id,name,phone,quantity,date,time,user_id,is_ordered,is_paid,amount));
             }
         } catch (Exception e) {
         }
@@ -80,7 +84,11 @@ public class ReserDAO extends DAO{
                 int quantity = rs.getInt("quantity");
                 String date = rs.getString("booked_date");
                 String time = rs.getString("booked_time");
-                return new Reser(reser_id,name,phone,quantity,date,time);
+                int user_id = rs.getInt("userid");
+                int is_ordered = rs.getInt("is_ordered");
+                int is_paid = rs.getInt("is_paid");
+                float amount = rs.getFloat("amount");
+                return new Reser(reser_id,name,phone,quantity,date,time,user_id,is_ordered,is_paid,amount);
             }
         } catch (Exception e) {
         }
@@ -96,7 +104,7 @@ public class ReserDAO extends DAO{
             ps.setFloat(1, amount);
             ps.setInt(2, reser_id);
             int rs = ps.executeUpdate();
-            return true;
+            if (rs != 0) return true;
         } catch (Exception e) {
         }
         return false;
@@ -126,10 +134,12 @@ public class ReserDAO extends DAO{
             float sum=0;
             int client_id = clientlist[i];
             query = "SELECT amount FROM tblreser " 
-                + "Where userid = ?";
+                + "Where userid = ? and booked_date BETWEEN ? AND ?";
             try {
                 PreparedStatement  ps = con.prepareStatement(query);
                 ps.setInt(1, client_id);
+                ps.setDate(2, java.sql.Date.valueOf(begin_date));
+                ps.setDate(3, java.sql.Date.valueOf(end_date));
                 ResultSet rs = ps.executeQuery();
                 while (rs.next()){
                     float amount = rs.getFloat("amount");
@@ -161,7 +171,7 @@ public class ReserDAO extends DAO{
     
     public ArrayList<Reser> getStatReser(int id, String begin_date, String end_date){
         ArrayList<Reser> res = new ArrayList<>();
-        String query = "SELECT * FROM tblreser WHERE userid = ? AND booked_date BETWEEN ? AND ?";
+        String query = "SELECT * FROM tblreser WHERE userid = ? AND booked_date BETWEEN ? AND ? AND is_ordered = 1";
         try {
             PreparedStatement  ps = con.prepareStatement(query);
             ps.setInt(1, id);
@@ -186,7 +196,7 @@ public class ReserDAO extends DAO{
     
     public ArrayList<Reser> getOrderedReser(String clientname){
         ArrayList<Reser> res = new ArrayList<>();
-        String query = "SELECT * FROM tblreser WHERE name LIKE ? and is_ordered = 1";
+        String query = "SELECT * FROM tblreser WHERE name LIKE ? and is_ordered = 1 and is_paid=0";
         try {
             PreparedStatement  ps = con.prepareStatement(query);
             ps.setString(1, "%"+clientname+"%");
@@ -213,7 +223,7 @@ public class ReserDAO extends DAO{
             PreparedStatement  ps = con.prepareStatement(query);
             ps.setInt(1, reser_id);
             int rs = ps.executeUpdate();
-            return true;
+            if (rs != 0) return true;
         } catch (Exception e) {
         }
         return false;

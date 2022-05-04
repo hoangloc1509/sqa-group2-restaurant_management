@@ -26,7 +26,7 @@ public class DishDAO extends DAO{
         List<Dish> res = new ArrayList<>();
         String query = "SELECT * FROM tbldish Where name LIKE ?";
         try {
-            PreparedStatement  ps = con.prepareStatement(query);
+            PreparedStatement ps = con.prepareStatement(query);
             ps.setString(1, "%"+ dish_name + "%");
             ResultSet rs = ps.executeQuery();
              while (rs.next()){
